@@ -1,0 +1,31 @@
+# Portfolio Divin Ngana
+
+> Site officiel d’Ange Divin Ngana Nongni, étudiant ingénieur en informatique et fondateur de DIVLAB.
+
+Canonical URL: https://divin.divlabs-tech.com
+Language: fr-FR
+
+## Identity
+
+- Full name: Ange Divin Ngana Nongni
+- Common name: Divin Ngana
+- Organization: DIVLAB
+- Location: Bordeaux, France and Douala, Cameroon
+- Fields: software engineering, artificial intelligence, data science, web development, product prototyping
+
+## Main projects
+
+- ARGUS / AI SHIELD: citizen cybersecurity assisted by artificial intelligence
+- Athenis: business management suite for SMEs
+- DIVLAB Training: learning and training platform
+- DIVLAB AI: conversational assistant
+- Echo-local: community project against misinformation
+- Genuka Trust: intelligent reviews for African SMEs
+- Sous nos pieds: interactive water, soil and tree prototype
+
+## Official links
+
+- Portfolio: https://divin.divlabs-tech.com
+- DIVLAB: https://divlabs-tech.com
+- LinkedIn: https://www.linkedin.com/in/divin-ngana-33946b346
+- GitHub: https://github.com/Divlab-softwares

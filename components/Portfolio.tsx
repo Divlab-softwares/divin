@@ -10,6 +10,7 @@ type Project = {
   description: string;
   long: string;
   image: string;
+  imageBack?: string;
   categories: Exclude<Category, "Tous">[];
   stack: string[];
   href?: string;
@@ -19,38 +20,55 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "DIVLAB Train",
+    eyebrow: "Apprentissage et accompagnement",
+    description: "Une plateforme de formation qui place la progression, l’accompagnement et l’expérience utilisateur au centre.",
+    long: "Un produit Next.js de l’écosystème DIVLAB avec espaces apprenants et formateurs, abonnements, salles et mascotte comportementale.",
+    image: "/assets/divlab-train.png",
+    imageBack: "/assets/divlab-train.png",
+    categories: ["Web", "Produit"],
+    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
+    href: "https://train.divlabs-tech.com",
+    featured: true,
+  },
+  {
     title: "ARGUS / AI SHIELD",
     eyebrow: "Cybersécurité citoyenne assistée par IA",
     description: "Un bouclier numérique pour vérifier des contenus, comprendre les risques et signaler les menaces.",
     long: "Écosystème DIVLAB associant une application Flutter, une API FastAPI et des moteurs d’analyse pour les documents, médias, liens et signaux d’ingénierie sociale.",
     image: "/assets/argus.svg",
+    imageBack: "/assets/argus-back.png",
     categories: ["IA", "Produit"],
     stack: ["Flutter", "FastAPI", "Python", "IA"],
-    featured: true,
+    href: "https://argus-presentation.divlabs-tech.com",
   },
   {
-    title: "Athenis",
-    eyebrow: "Gestion 360° pour PME",
-    description: "Une suite de gestion multi-tenant pensée pour les réalités de l’Afrique francophone et de la France.",
-    long: "Athenis réunit gestion commerciale, comptabilité, RH, juridique, ESG et fiscalité avec prise en charge SYSCOHADA et PCG France.",
-    image: "/assets/athenis-dashboard.jpg",
-    categories: ["Web", "Produit"],
-    stack: ["React", "Node.js", "Prisma", "PostgreSQL"],
-    featured: true,
+    title: "SENTINELLE",
+    eyebrow: "Plateforme de veille et d’alerte",
+    description: "Application de lutte contre la désinformation et les derives de l'IA.",
+    long: "Application de veille et d’alerte pour les contenus en ligne, avec un accent sur la détection des deepfakes et la vérification des informations. Projet réalisé avec Flutter, FastAPI et Python. Partie du projet global ARGUS / AI SHIELD, SENTINELLE est un outil de surveillance et d’alerte pour les contenus en ligne, visant à protéger les utilisateurs contre la désinformation et les menaces numériques.",
+    image: "/assets/SENTINELLE.jpg",
+    imageBack: "/assets/SENTINELLE-back.jpg",
+    categories: ["Produit", "IA"],
+    stack: ["flutter", "FastAPI", "Python", "IA"],
+    github: "",
+    href: "https://argus-presentation.divlabs-tech.com",
   },
   {
-    title: "DIVLAB Training",
-    eyebrow: "Apprentissage et accompagnement",
-    description: "Une plateforme de formation qui place la progression, l’accompagnement et l’expérience utilisateur au centre.",
-    long: "Un produit Next.js de l’écosystème DIVLAB avec espaces apprenants et formateurs, abonnements, salles et mascotte comportementale.",
-    image: "/assets/divlab-training.png",
+    title: "DIVLAB Site",
+    eyebrow: "Site vitrine et portfolio",
+    description: "Un site web qui présente DIVLAB, ses projets et son fondateur, avec un accent sur l’expérience utilisateur et la performance.",
+    long: "Site web de DIVLAB, réalisé avec Next.js et TypeScript, mettant en avant les projets, l’expertise et le parcours du fondateur.",
+    image: "/assets/divlab-site.png",
+    imageBack: "/assets/divlab-site-back.png",
     categories: ["Web", "Produit"],
     stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
+    href: "https://divlabs-tech.com",
   },
   {
     title: "DIVLAB AI",
     eyebrow: "Assistant conversationnel",
-    description: "Un chatbot intelligent conçu pour rendre l’assistance en ligne plus directe et plus accessible.",
+    description: "Un chatbot intelligent conçu pour rendre l’assistance en ligne plus directe et plus accessible.  ( En cours de developpement )",
     long: "Projet d’assistant en ligne de DIVLAB, présenté dans le portfolio historique et disponible publiquement sur GitHub.",
     image: "/assets/divlab-ai.png",
     categories: ["IA", "Web"],
@@ -63,9 +81,22 @@ const projects: Project[] = [
     description: "Un projet d’engagement communautaire conçu pour agir localement face à la désinformation.",
     long: "Réalisé pendant le hackathon GLOBAL YOUTH organisé par l’UNESCO, Echo-local relie information, communauté et action de proximité.",
     image: "/assets/echo-local.png",
+    imageBack: "/assets/echo-local-back.png",
     categories: ["Web", "Produit"],
     stack: ["Web", "UX", "Innovation sociale"],
     github: "https://github.com/Divlab-softwares/Echo-local",
+  },
+  {
+    title: "MobileRa",
+    eyebrow: "Realite augmentee",
+    description: "Un projet de dashboard AR pour les téléphones.",
+    long: "Le telephone utilise le tracking AR natif du navigateur pour reconnaitre l'espace. L'utilisateur vise une surface, touche l'ecran, et le dashboard est ancre dans le monde reel.",
+    image: "/assets/mobilera.png",
+    imageBack: "/assets/mobilera-back.png",
+    categories: ["Web", "Produit"],
+    stack: ["Web", "Realite augmentee", "UX"],
+    github: "https://github.com/Divlab-softwares/mobile-ra-dashoard",
+    href: "https://mobilera.divlabs-tech.com",
   },
   {
     title: "Genuka Trust",
@@ -73,18 +104,32 @@ const projects: Project[] = [
     description: "Une approche de la confiance client fondée sur la collecte et l’exploitation intelligente des avis.",
     long: "Contribution à une solution destinée à aider les PME africaines à mieux comprendre leurs clients et améliorer leur performance.",
     image: "/assets/genuka-trust.png",
+    imageBack: "/assets/genuka-trust-back.png",
     categories: ["IA", "Data", "Produit"],
     stack: ["Data", "IA", "Web"],
     github: "https://github.com/Divlab-softwares/GenukaTrust",
+    href: "https://genuka-trust.vercel.app",
   },
   {
     title: "Sous nos pieds",
     eyebrow: "Prototype eau, sol et arbre",
     description: "Une expérience physique et interactive pour rendre visibles la pluie et la réponse du sol.",
-    long: "Prototype mêlant données environnementales, ESP32, NeoPixels, servo et interface web pour comparer un épisode forestier observé à Mérignac.",
+    long: "Prototype mêlant données environnementales, ESP32, NeoPixels, servo et interface web pour comparer un épisode forestier observé à Mérignac.  Projet realise lors du HACKATHON dont le but etait de concevoir un POCL (Prototype d’Objet Connecté Local) pour sensibiliser à l’environnement.",
     image: "/assets/sous-nos-pieds.png",
+    imageBack: "/assets/sous-nos-pieds.png",
     categories: ["Data", "Produit"],
     stack: ["ESP32", "MicroPython", "Data", "Web"],
+  },
+  {
+    title: "Ecosystem",
+    eyebrow: "Prototype d’écosystème interactif",
+    description: "Une plateforme pour explorer et comprendre les interactions dans un écosystème.",
+    long: "DIVLAB-training est une plateforme gratuite et open-source construite sur Next.js et Tailwind CSS, conçue pour aider les formateurs, éducateurs et créateurs de cours à offrir des expériences d'apprentissage de haute qualité tout en augmentant leurs revenus. Plutôt que d'être un simple tableau de bord administratif, DIVLAB-training fournit aux formateurs les outils dont ils ont besoin pour gérer leurs cours, engager les apprenants et créer des relations durables. En combinant les technologies web modernes avec des tableaux de bord intuitifs, elle permet aux formateurs de se concentrer sur ce qui compte vraiment : enseigner et accroître leur impact.",
+    image: "/assets/ecosystem.png",
+    imageBack: "/assets/ecosystem-back.png",
+    categories: ["Data", "Produit"],
+    stack: ["Next.js", "Python", "Data", "Web"],
+    href: "https://ecosystem.divlabs-tech.com",
   },
 ];
 
@@ -248,8 +293,8 @@ export default function Portfolio() {
           </div>
           <div className="project-grid">
             {filtered.map((project, index) => (
-              <article className={`project-card ${project.featured ? "featured" : ""}`} key={project.title} onClick={() => openProject(project)} tabIndex={0} onKeyDown={(e) => e.key === "Enter" && openProject(project)}>
-                <div className="project-media"><img src={project.image} alt="" /><span className="project-number">0{index + 1}</span></div>
+              <article className={`project-card border-md ${project.featured ? "featured" : ""}`} key={project.title} onClick={() => openProject(project)} tabIndex={0} onKeyDown={(e) => e.key === "Enter" && openProject(project)}>
+                <div className="project-media"><img src={project.featured ? project.imageBack : project.image} alt="" /><span className="project-number">0{index + 1}</span></div>
                 <div className="project-body"><p className="eyebrow">{project.eyebrow}</p><h3>{project.title}</h3><p>{project.description}</p><div className="tags">{project.stack.map((tag) => <span key={tag}>{tag}</span>)}</div><button>Voir le projet <ArrowIcon /></button></div>
               </article>
             ))}
@@ -264,7 +309,7 @@ export default function Portfolio() {
         </div>
         <div className="skills-layout">
           <div className="skill-list">{skills.map((skill, index) => <div className="skill-row" key={skill.name}><span>0{index + 1}</span><div><h3>{skill.name}</h3><p>{skill.detail}</p></div><b>↗</b></div>)}</div>
-          <div className="tool-cloud"><p>MON TERRAIN DE JEU</p>{["Next.js","React","TypeScript","Python","C# / .NET","FastAPI","TensorFlow","scikit-learn","PostgreSQL","Prisma","Flutter","Git","ESP32","R"].map((tool, i) => <span style={{ "--i": i } as React.CSSProperties} key={tool}>{tool}</span>)}</div>
+          <div className="tool-cloud"><p>MON TERRAIN DE JEU</p>{["Next.js", "React", "TypeScript", "Python", "C# / .NET", "FastAPI", "TensorFlow", "scikit-learn", "PostgreSQL", "Prisma", "Flutter", "Git", "ESP32", "R"].map((tool, i) => <span style={{ "--i": i } as React.CSSProperties} key={tool}>{tool}</span>)}</div>
         </div>
       </section>
 
@@ -285,7 +330,7 @@ export default function Portfolio() {
 
       <footer className="footer shell"><div className="brand"><span className="brand-mark">DN</span><span><strong>DIVIN NGANA</strong><small>Conçu avec précision et curiosité.</small></span></div><p>© {new Date().getFullYear()} — Bordeaux ↔ Douala</p><a href="#top">Retour en haut ↑</a></footer>
 
-      {selected && <div className="modal-backdrop" onClick={() => setSelected(null)} role="presentation"><article className="project-modal" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={selected.title}><button className="modal-close" onClick={() => setSelected(null)} aria-label="Fermer">×</button><img src={selected.image} alt="" /><p className="eyebrow">{selected.eyebrow}</p><h2>{selected.title}</h2><p>{selected.long}</p><div className="tags">{selected.stack.map((tag) => <span key={tag}>{tag}</span>)}</div><div className="modal-links">{selected.github && <a className="button primary" href={selected.github} target="_blank">Voir sur GitHub <ExternalIcon /></a>}{selected.href && <a className="button ghost" href={selected.href} target="_blank">Visiter <ExternalIcon /></a>}</div></article></div>}
+      {selected && <div className="modal-backdrop " onClick={() => setSelected(null)} role="presentation"><article className="project-modal" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={selected.title}><button className="modal-close" onClick={() => setSelected(null)} aria-label="Fermer">×</button><img src={selected.imageBack ? selected.imageBack : selected.image} alt="" /><p className="eyebrow">{selected.eyebrow}</p><h2>{selected.title}</h2><p>{selected.long}</p><div className="tags">{selected.stack.map((tag) => <span key={tag}>{tag}</span>)}</div><div className="modal-links">{selected.github && <a className="button primary" href={selected.github} target="_blank">Voir sur GitHub <ExternalIcon /></a>}{selected.href && <a className="button ghost" href={selected.href} target="_blank">Visiter <ExternalIcon /></a>}</div></article></div>}
     </main>
   );
 }

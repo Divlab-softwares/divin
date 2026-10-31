@@ -1,0 +1,15 @@
+/* TEAM */
+Creator: Ange Divin Ngana Nongni
+Role: Student software engineer and founder of DIVLAB
+Location: Bordeaux, France / Douala, Cameroon
+LinkedIn: https://www.linkedin.com/in/divin-ngana-33946b346
+GitHub: https://github.com/Divlab-softwares
+
+/* ORGANIZATION */
+Name: DIVLAB
+Website: https://divlabs-tech.com
+
+/* SITE */
+Language: French
+Technologies: Next.js, React, TypeScript
+Canonical URL: https://divin.divlabs-tech.com
