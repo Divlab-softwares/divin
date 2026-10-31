@@ -249,7 +249,7 @@ export default function Portfolio() {
           <p className="hero-lead">Étudiant ingénieur, développeur et fondateur de DIVLAB. Je travaille à l’intersection du logiciel, de la donnée et de l’intelligence artificielle — avec une obsession : passer du concept à quelque chose qui fonctionne vraiment.</p>
           <div className="hero-actions">
             <a className="button primary" href="#projets">Explorer mes projets <ArrowIcon /></a>
-            <a className="button ghost" href="/CV_Ange_Divin_Ngana.pdf" download>Télécharger mon CV</a>
+            <a className="button ghost" href="/CV-Ange_Divin_NGANA_NONGNI.pdf" download>Télécharger mon CV</a>
           </div>
           <div className="hero-proof">
             <span><b>7+</b> projets présentés</span><span><b>3</b> terrains — web, IA, data</span><span><b>2</b> pays dans mon parcours</span>
