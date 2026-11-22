@@ -7,9 +7,9 @@ GitHub: https://github.com/Divlab-softwares
 
 /* ORGANIZATION */
 Name: DIVLAB
-Website: https://divlabs-tech.com
+Website: https://divlab.site
 
 /* SITE */
 Language: French
 Technologies: Next.js, React, TypeScript
-Canonical URL: https://divin.divlabs-tech.com
+Canonical URL: https://divin.divlab.site

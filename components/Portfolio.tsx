@@ -28,7 +28,7 @@ const projects: Project[] = [
     imageBack: "/assets/divlab-train.png",
     categories: ["Web", "Produit"],
     stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-    href: "https://train.divlabs-tech.com",
+    href: "https://train.divlab.site",
     featured: true,
   },
   {
@@ -40,7 +40,7 @@ const projects: Project[] = [
     imageBack: "/assets/argus-back.png",
     categories: ["IA", "Produit"],
     stack: ["Flutter", "FastAPI", "Python", "IA"],
-    href: "https://argus-presentation.divlabs-tech.com",
+    href: "https://argus-presentation.divlab.site",
   },
   {
     title: "SENTINELLE",
@@ -52,7 +52,7 @@ const projects: Project[] = [
     categories: ["Produit", "IA"],
     stack: ["flutter", "FastAPI", "Python", "IA"],
     github: "",
-    href: "https://argus-presentation.divlabs-tech.com",
+    href: "https://argus-presentation.divlab.site",
   },
   {
     title: "DIVLAB Site",
@@ -63,7 +63,7 @@ const projects: Project[] = [
     imageBack: "/assets/divlab-site-back.png",
     categories: ["Web", "Produit"],
     stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-    href: "https://divlabs-tech.com",
+    href: "https://divlab.site",
   },
   {
     title: "DIVLAB AI",
@@ -96,7 +96,7 @@ const projects: Project[] = [
     categories: ["Web", "Produit"],
     stack: ["Web", "Realite augmentee", "UX"],
     github: "https://github.com/Divlab-softwares/mobile-ra-dashoard",
-    href: "https://mobilera.divlabs-tech.com",
+    href: "https://mobilera.divlab.site",
   },
   {
     title: "Genuka Trust",
@@ -129,7 +129,7 @@ const projects: Project[] = [
     imageBack: "/assets/ecosystem-back.png",
     categories: ["Data", "Produit"],
     stack: ["Next.js", "Python", "Data", "Web"],
-    href: "https://ecosystem.divlabs-tech.com",
+    href: "https://ecosystem.divlab.site",
   },
 ];
 
@@ -323,7 +323,7 @@ export default function Portfolio() {
       <section className="contact section shell" id="contact">
         <div className="contact-panel">
           <div><p className="section-index">05 — CONTACT</p><h2>Vous avez un problème intéressant ?<br /><em>Construisons la suite.</em></h2><p>Stage, produit numérique, expérimentation IA ou simple échange technique : je suis toujours partant pour une conversation concrète.</p></div>
-          <div className="contact-actions"><a className="button primary" href="mailto:nganadivin@gmail.com">M’écrire <ArrowIcon /></a><button className="button ghost" onClick={copyEmail}>{copied ? "Email copié ✓" : "Copier mon email"}</button><div className="socials"><a href="https://www.linkedin.com/in/divin-ngana-33946b346" target="_blank">LinkedIn <ExternalIcon /></a><a href="https://github.com/Divlab-softwares" target="_blank">GitHub <ExternalIcon /></a><a href="https://divlabs-tech.com" target="_blank">DIVLAB <ExternalIcon /></a></div></div>
+          <div className="contact-actions"><a className="button primary" href="mailto:nganadivin@gmail.com">M’écrire <ArrowIcon /></a><button className="button ghost" onClick={copyEmail}>{copied ? "Email copié ✓" : "Copier mon email"}</button><div className="socials"><a href="https://www.linkedin.com/in/divin-ngana-33946b346" target="_blank">LinkedIn <ExternalIcon /></a><a href="https://github.com/Divlab-softwares" target="_blank">GitHub <ExternalIcon /></a><a href="https://divlab.site" target="_blank">DIVLAB <ExternalIcon /></a></div></div>
           <img className="contact-mascot" src="/animations/mascot/builder.webp" alt="Mascotte DIVLAB en mode constructeur" />
         </div>
       </section>

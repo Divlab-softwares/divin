@@ -99,7 +99,7 @@ const organizationSchema = {
   "@type": "Organization",
   "@id": `${SITE_URL}/#divlab`,
   name: "DIVLAB",
-  url: "https://divlabs-tech.com",
+  url: "https://divlab.site",
   logo: `${SITE_URL}/assets/divlab-logo.jpg`,
   founder: { "@id": `${SITE_URL}/#person` },
   sameAs: ["https://github.com/Divlab-softwares"],

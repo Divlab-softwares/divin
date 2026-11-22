@@ -1,4 +1,4 @@
-export const SITE_URL = "https://divin.divlabs-tech.com";
+export const SITE_URL = "https://divin.divlab.site";
 export const SITE_NAME = "Portfolio Divin Ngana";
 export const PERSON_NAME = "Ange Divin Ngana Nongni";
 export const PRIMARY_TITLE = "Divin Ngana | Portfolio informatique, IA et DIVLAB";
@@ -17,5 +17,5 @@ export const SEO_KEYWORDS = [
 export const SOCIAL_LINKS = [
   "https://www.linkedin.com/in/divin-ngana-33946b346",
   "https://github.com/Divlab-softwares",
-  "https://divlabs-tech.com",
+  "https://divlab.site",
 ];

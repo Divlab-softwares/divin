@@ -2,7 +2,7 @@
 
 > Site officiel d’Ange Divin Ngana Nongni, étudiant ingénieur en informatique et fondateur de DIVLAB.
 
-Canonical URL: https://divin.divlabs-tech.com
+Canonical URL: https://divin.divlab.site
 Language: fr-FR
 
 ## Identity
@@ -25,7 +25,7 @@ Language: fr-FR
 
 ## Official links
 
-- Portfolio: https://divin.divlabs-tech.com
-- DIVLAB: https://divlabs-tech.com
+- Portfolio: https://divin.divlab.site
+- DIVLAB: https://divlab.site
 - LinkedIn: https://www.linkedin.com/in/divin-ngana-33946b346
 - GitHub: https://github.com/Divlab-softwares
